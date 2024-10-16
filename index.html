@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Animated Image Gallery</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container slide-in">
+        <div class="image-container">
+            <img id="mainImage" src="/api/placeholder/600/450" alt="Random image">
+            <div class="info-overlay">
+                <h3 id="titleimg">title</h3>
+                <p id="imageDescription">Image description</p>
+                <h5 id="date"></h5>
+            </div>
+            <div class="loading-overlay">
+                <div class="spinner"></div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="newImageBtn">
+                <i class="fas fa-sync-alt"></i> New Image
+            </button>
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider">
+                    <i class="fas fa-sun toggle-icon sun-icon"></i>
+                    <i class="fas fa-moon toggle-icon moon-icon"></i>
+                </span>
+            </label>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
